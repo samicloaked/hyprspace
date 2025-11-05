@@ -15,8 +15,6 @@ import (
 	"github.com/libp2p/go-libp2p/core/peer"
 )
 
-// Main is gated behind the `connectivity_main` build tag so that the library can
-// coexist with this example inside the same module.
 func main() {
 	identityPath := flag.String("identity", "", "Path to a libp2p private key (created if missing).")
 	bootstrapStr := flag.String("bootstrap", "", "Comma-separated bootstrap peer multiaddrs.")
